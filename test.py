@@ -1,12 +1,16 @@
 import unittest
 from perfectsquare import isPerfectSquare
 class TestisPerfectSquare(unittest.TestCase):
+    
+    # wrong testcase
     def test_case1(self):
         result = isPerfectSquare(16)
-        self.assertEqual(result,True)
+        self.assertEqual(result,False)
+    # wrong testcase
     def test_case2(self):
         result = isPerfectSquare(3)
-        self.assertEqual(result,False)
+        self.assertEqual(result,True)
+        
     def test_case3(self):
         result = isPerfectSquare(10)
         self.assertEqual(result,False)
